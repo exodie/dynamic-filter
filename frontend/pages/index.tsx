@@ -1,13 +1,12 @@
 import { NextPage } from 'next';
 
+import { Layout } from '@/components/layout';
+import { List } from '@/components/list';
+
 const HomePage: NextPage = () => (
-  <h1>
-    Тестовое задание
-    {' '}
-    <span className="text-blue">
-      Dynamic-Filter
-    </span>
-  </h1>
+  <Layout>
+    <List />
+  </Layout>
 );
 
 export default HomePage;

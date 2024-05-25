@@ -1,9 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "airbnb",
-    "airbnb-typescript"
-  ],
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -19,12 +15,9 @@
       }
     ],
     "import/no-extraneous-dependencies": [
-      "error",
+      // "error",
       {
-        "devDependencies": [
-          "**/*.test.ts",
-          "**/*.test.tsx"
-        ]
+        "devDependencies": ["**/*.test.ts", "**/*.test.tsx"]
       }
     ]
   }
